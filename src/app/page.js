@@ -11,39 +11,34 @@ const Home = () => (
             workplace."
       href="#"
       btnIcon={IconTypes.ARROW_RIGHT}
+      className="mb-30"
     />
     <div className="row">
-      <div className="col col-4">
+      <div className="col col-4 m-mw-100">
         <Card
-          label="Technology Trends"
+          label="Options"
           title="Discover the Future of Work with AI-Powered Tools"
-          summary="Stay ahead of the curve by exploring how artificial intelligence is
-            reshaping productivity, collaboration, and innovation in the modern
-            workplace."
           href="#"
           btnIcon={IconTypes.ARROW_RIGHT}
+          className="mb-30"
         />
       </div>
-      <div className="col col-4">
+      <div className="col col-4 m-mw-100">
         <Card
           label="Technology Trends"
           title="Discover the Future of Work with AI-Powered Tools"
-          summary="Stay ahead of the curve by exploring how artificial intelligence is
-            reshaping productivity, collaboration, and innovation in the modern
-            workplace."
           href="#"
           btnIcon={IconTypes.ARROW_RIGHT}
+          className="mb-30"
         />
       </div>
-      <div className="col col-4">
+      <div className="col col-4 m-mw-100">
         <Card
-          label="Technology Trends"
+          label="Travel Guides"
           title="Discover the Future of Work with AI-Powered Tools"
-          summary="Stay ahead of the curve by exploring how artificial intelligence is
-            reshaping productivity, collaboration, and innovation in the modern
-            workplace."
           href="#"
           btnIcon={IconTypes.ARROW_RIGHT}
+          className="mb-30"
         />
       </div>
     </div>
