@@ -1,36 +1,145 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+    # Modern Blog with Next.js & Strapi
 
-## Getting Started
+    This is a modern and responsive blog application built using **Next.js** for the frontend and **Strapi** as a headless CMS. The project allows content creators to manage blog posts and categories through a simple and powerful admin panel while providing a fast and user-friendly frontend interface.
 
-First, run the development server:
+    ## ✨ Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+    - Headless CMS integration (Strapi)
+    - Static site generation (SSG) with dynamic routing
+    - Fully responsive layout
+    - Filter posts by category
+    - Individual blog post pages
+    - SEO-friendly design
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+    ## 🛠️ Tech Stack
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+    - **Frontend**: Next.js
+    - **Backend**: Strapi (Headless CMS)
+    - **Styling**: Tailwind CSS or CSS Modules
+    - **API**: REST
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+    ## 🚀 Getting Started
 
-## Learn More
+    ### Prerequisites
 
-To learn more about Next.js, take a look at the following resources:
+    - Node.js >= 18
+    - npm or yarn
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    ### 1. Clone the repository
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+    ```bash
+    git clone https://github.com/Davouded/nextjs-strapi-blog.git
+    ```
 
-## Deploy on Vercel
+    ### 2. Install frontend dependencies
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    ```bash
+    cd frontend
+    npm install
+    # or
+    yarn install
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+    ### 3. Install backend dependencies
+
+    ```bash
+    cd ../backend
+    npm install
+    # or
+    yarn install
+    ```
+
+    ### 4. Run the development servers
+
+    Start the Strapi backend:
+
+    ```bash
+    cd backend
+    npm run develop
+    ```
+
+    In a new terminal, run the frontend:
+
+    ```bash
+    cd frontend
+    npm run dev
+    ```
+
+    - Frontend: http://localhost:3000
+    - Admin Panel: http://localhost:1337/admin
+    ## 📸 Screenshots
+
+    ### 🏠 Homepage
+
+![Homepage Screenshot](<./public/Screenshot%20(167).jpg>)
+
+    ### 📝 Single Post Page
+
+![Post Screenshot](<./public/Screenshot%20(168).jpg>)
+
+    ---
+
+    ## 🇮🇷 توضیحات فارسی
+
+    این پروژه یک وبلاگ مدرن و واکنش‌گرا است که با استفاده از **Next.js** در بخش فرانت‌اند و **Strapi** به عنوان یک Headless CMS در بخش بک‌اند پیاده‌سازی شده است. نویسنده می‌تواند به‌سادگی مطالب جدید را از طریق پنل مدیریت اضافه و ویرایش کند و کاربران نیز از یک رابط کاربری سریع و مرتب استفاده می‌کنند.
+
+    ### ✨ ویژگی‌ها
+
+    - اتصال به CMS مستقل (Strapi)
+    - تولید صفحات به صورت استاتیک (SSG)
+    - طراحی واکنش‌گرا و مدرن
+    - امکان فیلتر بر اساس دسته‌بندی
+    - صفحات تکی برای پست‌ها
+    - بهینه برای موتورهای جستجو (SEO)
+
+    ### 🛠️ تکنولوژی‌ها
+
+    - **فرانت‌اند**: Next.js
+    - **بک‌اند**: Strapi
+    - **استایل‌دهی**: Tailwind CSS یا CSS Modules
+    - **API**: مبتنی بر REST
+
+    ### 🚀 نحوه راه‌اندازی
+
+    1. پروژه را کلون کنید:
+
+    ```bash
+    git clone https://github.com/Davouded/nextjs-strapi-blog.git
+    ```
+
+    2. وارد فولدر frontend شده و پکیج‌ها را نصب کنید:
+
+    ```bash
+    cd frontend
+    npm install
+    ```
+
+    3. وارد فولدر backend شده و پکیج‌های استرپی را نصب کنید:
+
+    ```bash
+    cd ../backend
+    npm install
+    ```
+
+    4. ابتدا استرپی را اجرا کنید:
+
+    ```bash
+    cd backend
+    npm run develop
+    ```
+
+    سپس در یک ترمینال دیگر، فرانت‌اند را بالا بیاورید:
+
+    ```bash
+    cd frontend
+    npm run dev
+    ```
+
+    - آدرس فرانت‌اند: `http://localhost:3000`
+    - پنل مدیریت Strapi: `http://localhost:1337/admin`
+
+    ---
+
+    ## 🧑‍💻 سازنده
+
+    [Davouded](https://github.com/Davouded)
