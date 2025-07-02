@@ -72,11 +72,11 @@ npm run dev
 
 ### 🏠 Homepage
 
-![Homepage Screenshot](<./public/Screenshot%20(167).jpg>)
+![Homepage Screenshot](./public/1.png)
 
 ### 📝 Single Post Page
 
-![Post Screenshot](<./public/Screenshot%20(168).jpg>)
+![Post Screenshot](./public/2.png)
 
 ---
 
