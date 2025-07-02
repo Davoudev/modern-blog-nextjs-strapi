@@ -1,44 +1,44 @@
-    # Modern Blog with Next.js & Strapi
+# Modern Blog with Next.js & Strapi
 
-    This is a modern and responsive blog application built using **Next.js** for the frontend and **Strapi** as a headless CMS. The project allows content creators to manage blog posts and categories through a simple and powerful admin panel while providing a fast and user-friendly frontend interface.
+This is a modern and responsive blog application built using **Next.js** for the frontend and **Strapi** as a headless CMS. The project allows content creators to manage blog posts and categories through a simple and powerful admin panel while providing a fast and user-friendly frontend interface.
 
-    ## ✨ Features
+## ✨ Features
 
-    - Headless CMS integration (Strapi)
-    - Static site generation (SSG) with dynamic routing
-    - Fully responsive layout
-    - Filter posts by category
-    - Individual blog post pages
-    - SEO-friendly design
+- Headless CMS integration (Strapi)
+- Static site generation (SSG) with dynamic routing
+- Fully responsive layout
+- Filter posts by category
+- Individual blog post pages
+- SEO-friendly design
 
-    ## 🛠️ Tech Stack
+## 🛠️ Tech Stack
 
-    - **Frontend**: Next.js
-    - **Backend**: Strapi (Headless CMS)
-    - **Styling**: Tailwind CSS or CSS Modules
-    - **API**: REST
+- **Frontend**: Next.js
+- **Backend**: Strapi (Headless CMS)
+- **Styling**: Tailwind CSS or CSS Modules
+- **API**: REST
 
-    ## 🚀 Getting Started
+## 🚀 Getting Started
 
-    ### Prerequisites
+### Prerequisites
 
-    - Node.js >= 18
-    - npm or yarn
+- Node.js >= 18
+- npm or yarn
 
-    ### 1. Clone the repository
+### 1. Clone the repository
 
-    ```bash
-    git clone https://github.com/Davouded/nextjs-strapi-blog.git
-    ```
+```bash
+git clone https://github.com/Davouded/nextjs-strapi-blog.git
+```
 
-    ### 2. Install frontend dependencies
+### 2. Install frontend dependencies
 
-    ```bash
-    cd frontend
-    npm install
-    # or
-    yarn install
-    ```
+```bash
+cd frontend
+npm install
+# or
+yarn install
+```
 
     ### 3. Install backend dependencies
 
@@ -71,11 +71,11 @@
 
     ### 🏠 Homepage
 
-![Homepage Screenshot](<./public/Screenshot%20(167).jpg>)
+    ![Homepage Screenshot](<./public/Screenshot%20(167).jpg>)
 
     ### 📝 Single Post Page
 
-![Post Screenshot](<./public/Screenshot%20(168).jpg>)
+    ![Post Screenshot](<./public/Screenshot%20(168).jpg>)
 
     ---
 
