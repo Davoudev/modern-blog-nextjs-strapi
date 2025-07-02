@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blogs",
+  "info": {
+    "singularName": "blog",
+    "pluralName": "blogs",
+    "displayName": "Blogs"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "maxLength": 155,
+      "required": true,
+      "unique": true
+    },
+    "Category": {
+      "type": "enumeration",
+      "enum": [
+        "Technology Trends",
+        "Options",
+        "Travel Guides"
+      ]
+    },
+    "Summary": {
+      "type": "text",
+      "maxLength": 255,
+      "required": true
+    },
+    "isFetured": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "Thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "FeturedImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Content": {
+      "type": "blocks",
+      "required": true
+    },
+    "slug": {
+      "type": "string",
+      "maxLength": 255,
+      "required": true
+    }
+  }
+}
