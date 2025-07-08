@@ -9,7 +9,13 @@ const Card = (props) => (
     <div className={styles.card}>
       <div className={styles.card_imageWrap}>
         <div className={styles.card_image}>
-          <Image src={props.imgSrc} alt={props.imgAlt} fill />
+          <Image
+            src={props.imgSrc}
+            priority
+            alt={props.imgAlt}
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
         </div>
       </div>
       <div className={styles.card_content}>

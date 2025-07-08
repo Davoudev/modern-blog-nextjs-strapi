@@ -1,17 +1,18 @@
-// src/app/[slug]/page.js
-
 import Image from "next/image";
 import getCategoryColor from "../helpers/get-category-color";
 import styles from "./style.module.sass";
 import fetchBlogs from "../helpers/fetch-blog";
 import config from "@/config";
 
-export default async function BlogDetails({ params }) {
-  const { slug } = params;
+export const dynamicParams = true; // 🔥 اضافه برای حل مشکل
+
+export default async function BlogDetails(props) {
+  const params = await props.params;
+  const slug = params.slug;
 
   const blogs = await fetchBlogs(`filters[slug][$eq]=${slug}`);
 
-  if (!blogs.data.length) return null;
+  if (!blogs.data.length) return <div>Blog not found</div>;
 
   const blog = blogs.data[0];
 
@@ -20,7 +21,9 @@ export default async function BlogDetails({ params }) {
       <div className="row mb-50">
         <div className="col col-9">
           <div
-            className={`h6 mb-20 c-${getCategoryColor("Technology Trends")}`}
+            className={`h6 mb-20 c-${getCategoryColor(
+              blog.category || "Technology Trends"
+            )}`}
           >
             {blog.category}
           </div>
@@ -30,7 +33,7 @@ export default async function BlogDetails({ params }) {
 
       <Image
         className={`${styles.feturedImage} mb-50`}
-        src={`${config.api}${blog.FeturedImage.url}`}
+        src={`${config.api}${blog.FeturedImage?.url || ""}`}
         alt="Featured Image"
         width={1280}
         height={387}
@@ -40,7 +43,7 @@ export default async function BlogDetails({ params }) {
         <div
           className="col col-9"
           dangerouslySetInnerHTML={{
-            __html: blog.Content[0].children[0].text,
+            __html: blog.Content?.[0]?.children?.[0]?.text || "",
           }}
         />
       </div>
