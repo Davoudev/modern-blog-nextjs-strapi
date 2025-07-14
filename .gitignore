@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 /.pnp
+/blog-cms
 .pnp.*
 .yarn/*
 !.yarn/patches
