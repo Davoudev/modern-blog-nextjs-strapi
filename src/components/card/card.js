@@ -6,7 +6,7 @@ import getCategoryColor from "@/app/helpers/get-category-color";
 import config from "@/config";
 
 const Card = (props) => {
-  console.log("Card image source:", props.imgSrc);
+  console.log("Card image source:", props);
 
   return (
     <div className={`${styles.card_wrap} ${props.className || ""}`}>

@@ -1,20 +1,12 @@
 import config from "@/config";
 
 const fetchBlogs = async (params) => {
-  const reqOptions = {
-    headers: {
-      Authorization: `Bearer ${process.env.API_TOKEN}`,
-    },
-    cache: "no-store",
-  };
-  // const res = await fetch(`${config.api}/api/blogs?populate=*&${params}`, {
-
   try {
     const res = await fetch(
       `https://modern-blog-strapi-backend.onrender.com/api/blogs?populate=*&${params}`,
       {
-        cache: "no-store", // جلوگیری از کش
-        next: { revalidate: 0 }, // فقط در سرور استفاده بشه
+        cache: "no-store", // prev catching
+        next: { revalidate: 0 },
       }
     );
 
